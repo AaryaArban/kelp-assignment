@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+
+  postgres-db:
+    image: postgres:14-alpine
+    container_name: kelp-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mysecretpassword
+      POSTGRES_DB: kelp_db
+    ports:
+      - "5432:5432" 
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db-init:/docker-entrypoint-initdb.d
+    restart: always
+
+  postgres-test-db:
+    image: postgres:14-alpine
+    container_name: kelp-postgres-test
+    environment:
+      POSTGRES_USER: test_user
+      POSTGRES_PASSWORD: test_password
+      POSTGRES_DB: test_db
+    ports:
+      - "5433:5432" 
+    volumes:
+      - pgdata-test:/var/lib/postgresql/data
+      - ./db-init:/docker-entrypoint-initdb.d
+    restart: always
+
+volumes:
+  pgdata:
+    driver: local
+
+  pgdata-test:
+    driver: local

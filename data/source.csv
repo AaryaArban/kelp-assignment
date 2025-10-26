@@ -1,0 +1,26 @@
+name.firstName,name.lastName,age,address.line1,address.line2,address.city,address.state,gender,occupation
+Rohit,Prasad,35,A-563 Rakshak Society,New Pune Road,Pune,Maharashtra,male,Engineer
+Jane,Doe,25,123 Main St,,New York,NY,female,Designer
+John,Smith,52,456 Oak Ave,Apt 2,Chicago,IL,male,Manager
+Alice,Johnson,18,789 Pine Ln,,Miami,FL,female,Student
+Bob,Brown,71,101 Maple Dr,,Boston,MA,male,Retired
+Charlie,Davis,45,202 Birch Rd,,Austin,TX,male,Doctor
+Diana,Evans,31,303 Cedar Pl,Suite 5,Seattle,WA,female,Analyst
+Ethan,Foster,66,404 Elm St,,Denver,CO,male,Professor
+Fiona,Green,22,505 Spruce Ave,,Portland,OR,female,Writer
+George,Hill,16,,,,,male,Student
+Hannah,Irwin,29,707 Pine St,,Atlanta,GA,female,Lawyer
+Ivan,Jones,58,808 Oakwood Dr,,Nashville,TN,male,Musician
+Julia,King,42,909 Maple Ln,,Richmond,VA,female,Chef
+Kevin,Lee,19,101 Birchwood,,San Francisco,CA,male,Student
+Laura,Miller,38,202 Cedar Crk,Apt 10,Phoenix,AZ,female,Nurse
+Mike,Nelson,61,303 Dahlia St,,Houston,TX,male,Retired
+Nina,Olson,27,404 Cypress Ct,,Raleigh,NC,female,Marketing
+Oscar,Perez,49,505 Redwood,,San Diego,CA,male,Architect
+Pam,Quinn,76,606 Sequoia,,Orlando,FL,female,Retired
+Rick,Roberts,33,707 Willow Way,,Salt Lake City,UT,male,Pilot
+Sarah,Taylor,21,,,,,female,Artist
+Tom,Underwood,55,909 Aspen Rd,,Las Vegas,NV,male,Electrician
+Uma,Vance,14,,,,,female,Student
+Victor,White,39,111 Juniper,,Charlotte,NC,male,Mechanic
+Wendy,Young,68,222 Magnolia,,Tampa,FL,female,Retired
