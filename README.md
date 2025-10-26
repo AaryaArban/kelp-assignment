@@ -163,10 +163,9 @@ Jest will automatically use the `.env.test` file, connect to the test database, 
 │   ├── csvProcessor.js    # The custom CSV-to-JSON streaming parser
 │   ├── dataImporter.js    # Orchestrates the import (truncate, parse, batch)
 │   ├── db.js              # Handles all DB logic (connection, batch insert, report)
-│   └── ...
+│   └── csvProcessor.test.js # Unit tests for the parser's nesting logic
 ├── tests/
 │   ├── api.e2e.test.js    # E2E test for the /process-csv endpoint
-│   └── csvProcessor.test.js # Unit tests for the parser's nesting logic
 ├── .env.example           # Example environment file
 ├── .gitignore             # Ignores node_modules, .env files, etc.
 ├── app.js                 # Express server definition and API routes
@@ -174,9 +173,11 @@ Jest will automatically use the `.env.test` file, connect to the test database, 
 ├── docker-compose.yml     # Defines the dev and test Postgres services
 ├── index.js               # Entry point, starts the server
 └── package.json           # Project scripts and dependencies
+└── package-lock.json      # Project scripts and dependencies
+
 ```
 
-### Core Logic: The Import Process (A Deep Dive)
+### Core Logic: The Import Process
 
 The entire import process is designed for memory efficiency and speed.
 
